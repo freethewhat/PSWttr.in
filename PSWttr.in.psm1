@@ -31,44 +31,19 @@
 function Get-Weather {
     [CmdletBinding()]
     param (
-        # Parameter help description
-        [Parameter(
-            Position = 0,
-            Mandatory = $false
-        )]
         [string]
         $City,
 
-        # Parameter help description
-        [Parameter(
-            Position = 1,
-            Mandatory = $false
-        )]
         [ValidateSet('Metric', 'USCS')]
         [string]
         $Units = "USCS",
 
-        # Parameter help description
-        [Parameter(
-            Position = 2,
-            Mandatory = $false
-        )]
         [switch]
         $Short,
 
-        # Parameter help description
-        [Parameter(
-            Position = 3,
-            Mandatory = $false
-        )]
         [switch]
         $Narrow,
 
-        # Parameter help description
-        [Parameter(
-            Position = 4,
-            Mandatory = $false
-        )]
         [ValidateSet(0, 1, 2, 4, 5, 6)]
         [string]
         $Forecast
@@ -119,5 +94,3 @@ function Get-Weather {
 
     return $weather
 }
-
-Export-ModuleMember -Function Get-Weather
