@@ -9,12 +9,13 @@ To install please download the package and extract it in your PowerShell modules
 ## Usage
 
 Get weather using your current IP Address Information.
-
-    Get-Weather
-
+```Powershell
+Get-Weather
+```
 Get weather for a specific location in metric.
-
-    Get-Weather -City 'London' -Units Metric
+```Powershell
+Get-Weather -City 'London' -Units Metric
+```
 
 ## Contributing
 
