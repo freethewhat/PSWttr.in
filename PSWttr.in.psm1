@@ -23,6 +23,8 @@
     0 - Current weather
     1 - Current weather + Today's Forecast
     3 - Current weather + today's forecast, and tomorrow's forecast
+.PARAMETER NoFollow
+    Do not show the follow line.
 .OUTPUTS
     System.String
 .NOTES
@@ -46,7 +48,10 @@ function Get-Weather {
 
         [ValidateSet(0, 1, 2, 4, 5, 6)]
         [string]
-        $Forecast
+        $Forecast,
+
+        [switch]
+        $NoFollow
     )
 
     $uri = 'https://wttr.in/'
@@ -76,7 +81,9 @@ function Get-Weather {
         $uri += "&$Forecast"
     }
 
-    $uri += "&F"
+    if($NoFollow) {
+        $uri += "&F"
+    }
 
     Write-Verbose "URI: $uri"
     Write-Verbose -Message "Getting weather from $uri"
