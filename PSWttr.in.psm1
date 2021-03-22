@@ -94,3 +94,5 @@ function Get-Weather {
 
     return $weather
 }
+
+Export-ModuleMember -Function Get-Weather
