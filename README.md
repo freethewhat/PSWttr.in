@@ -1,10 +1,14 @@
 # PSWttr.in
 
-This is a module that will interface with the http://wttr.in api interface and display the weather forecast on PowerShell.
+This is a module that will interface with the http://wttr.in api and display the weather forecast on PowerShell.
 
 ## Installation
 
-To install please download the package and extract it in your PowerShell modules folder. I have plans to make this available in the PowerShell Gallery in the near future.
+This package is hosted on the [Powershell Gallery](https://www.powershellgallery.com/packages/PSWttr.in/0.0.1) and can be installed using powershell.
+
+```Powershell
+Install-Module -Name PSWttr.in
+```
 
 ## Usage
 
