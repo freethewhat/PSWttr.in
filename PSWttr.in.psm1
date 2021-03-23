@@ -28,7 +28,7 @@
 .OUTPUTS
     System.String
 .NOTES
-    https://freethewhat.github.com
+    To report and issue or a bug please go create a new issue on github at https://github.com/freethewhat/PSWttr.in.
 #>
 function Get-Weather {
     [CmdletBinding()]
